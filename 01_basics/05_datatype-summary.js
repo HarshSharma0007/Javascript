@@ -1,0 +1,1 @@
+// Primitive Datatype : Boolean , Number , String ,BigInt, Symbol, null , undefined
