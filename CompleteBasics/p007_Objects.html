@@ -16,7 +16,10 @@
                     stars: 4.5,
                     count: 87
                 },
-                fun: function functn(){
+                // fun: function functn(){
+                //     console.log("My function statement.")
+                // }
+                functn(){
                     console.log("My function statement.")
                 }
             };
@@ -37,7 +40,7 @@
             console.log(product["rating"].count)
             //  Call a method or what we used to call function
 
-            product.fun();
+            product.functn();
 
 
             // Convert object to JSON
@@ -48,6 +51,43 @@
             //  opposite
 
             console.log(JSON.parse(JSONSTR));
+
+// An object in JS is actually  pointing towards a value so a const bject may update its value cause it is only refrencing it.
+
+            const object1 ={
+                message: "hello"
+            };
+            const object2 = object1;
+
+            object1.message = "Good Job";
+
+            console.log(object1);
+            console.log(object2);
+
+
+            const object3 ={
+                message: 'Good Job'
+            };
+
+            //  comparing obj 3 vs obj 2
+
+            console.log(object2===object3);
+            // will return Flase since they have same values but at different refrence points.
+
+            // But 
+
+            console.log(object2===object1);
+            // will be true as they have same refrence points
+
+
+
+            // destructuring
+
+            // const message = object.message;
+            // or
+            const { message } = object3;
+            console.log(message);
+
 
 
             
