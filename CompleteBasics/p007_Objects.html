@@ -10,7 +10,15 @@
         <script>
             const product = {
                 name: 'socks',
-                price: 1990
+                price: 1990,
+                ["delivery-time"]: '12 days',
+                rating: {
+                    stars: 4.5,
+                    count: 87
+                },
+                fun: function functn(){
+                    console.log("My function statement.")
+                }
             };
             console.log(product.price)
             product.name = "cotton socks";
@@ -22,6 +30,27 @@
             console.log(product)
             
             console.log(typeof product)
+
+
+            console.log(product['name'])
+
+            console.log(product["rating"].count)
+            //  Call a method or what we used to call function
+
+            product.fun();
+
+
+            // Convert object to JSON
+            const JSONSTR = JSON.stringify(product);
+            console.log(typeof JSONSTR )
+
+
+            //  opposite
+
+            console.log(JSON.parse(JSONSTR));
+
+
+            
         </script>
         
     </body>
