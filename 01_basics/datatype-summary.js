@@ -33,3 +33,26 @@ console.log(typeof hero);
 
 
 console.log(typeof myFunction)
+
+// **********************
+// MEMORY
+// **********************
+// STACK - PRIMITIVE
+// HEAP - NON-PRIMITIVE (we will get reference)
+
+let myYoutubeName = "HR"
+let anotherName = myYoutubeName
+anotherName = "RS"
+
+console.table([myYoutubeName, anotherName])
+// heap ---- single value
+let user1 = {
+    email :"user.google.com",
+    upi : "suer1upi",
+}
+
+let user2 = user1
+
+user2.email = "user2@email"
+
+console.table([user1.email, user2.email])
