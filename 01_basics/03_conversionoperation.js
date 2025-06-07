@@ -14,8 +14,14 @@ let valueofid2 =Number(id3)
 
 // console.log(typeof valueofid);
 // console.log(typeof valueofvar);
+// console.log(valueofvar); // NAN
 // console.log(typeof valueofid3)
 
+// "33" = Number => 33
+// "33abc" = Number => NaN
+// true =Boolean => 1;
+// false =Boolean=> 0;
+// 22 =String=> "22"
 
 // console.log(valueofid);
 // console.log(valueofvar);
@@ -45,4 +51,5 @@ console.log("1"+3+3);
 // NOT A NICE WAY 
 
 console.log(true)
-console.log(+true);
+console.log(+true); // confusing code (adding true with nothing gives 1) 
+// if add null or false than we will produce 0
